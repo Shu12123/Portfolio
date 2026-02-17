@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #181818;
+}
+.navbar {
+    background-color: #5f5f5f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    position: relative;  
+}
+.port{
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+}
+.nav{
+    color: white; 
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    position: absolute;   
+    left: 50%;         
+    transform: translateX(-50%);
+}
+.sa1{
+    color: white;
+}
+.footer {
+    background-color: #727070;
+    color: white;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 30px 60px;
+}
+.flow {
+    justify-self: start;
+}
+.cent {
+    justify-self: center;
+}
+.cent h4 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.cent p {
+    font-size: 14px;
+}
+.docu{
+    display: flex;
+}
+img{
+    width: 80vw;
+    height: 60vh ;
+    border-radius: 20%;
+    margin-top: 50px;
+    margin-left: 50px;
+    justify-self: start;
+}
+.c2{
+    color: white;
+    justify-self: center;
+    margin: 100px;
+    font-size: 30px;
+}
+h5{
+    color: white;
+    
+}
+
+/* i{
+    font-size: ;
+} */
+.btn{
+    color: white;
+    height: 40px;
+    width:100px;
+    border-radius: 10%;
+    background-color: green;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.btn2{
+    color: white;
+    height: 40px;
+    width:100px;
+    border-radius: 10%;
+    background-color: green;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.icc{
+    margin-top: 20px;
+    display: grid;
+    height: 100px;
+    /* background-color: palevioletred; */
+    grid-template-columns: auto auto auto auto ;
+
+    
+}
+.apple{
+    margin-left: 50px;
+    margin-top: 30px;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    /* align-self: flex-start; */
+}
+.a1{
+    color: white;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 10px;
+    place-self: centre;
+}
+.a2{
+    color: white;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 200;
+    gap: 20px;
+}
+.a3{
+    color: white;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 200;
+}
+.a4{
+    color: white;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 200;
+}
