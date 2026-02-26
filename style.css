@@ -4,9 +4,13 @@
 }
 body {
     background-color: #181818;
+    /* background-image: url("https://images4.alphacoders.com/286/thumb-1920-286946.jpg"); */
+    background-image: url("https://www.shutterstock.com/shutterstock/videos/3680145555/thumb/1.jpg?ip=x480");
+    background-repeat: no-repeat;
+    background-size: cover;   
 }
 .navbar {
-    background-color: #5f5f5f;
+    background-color: #181818;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +35,7 @@ body {
     color: white;
 }
 .footer {
-    background-color: #727070;
+    background-color: #181818;
     color: white;
     margin-top: auto;
     display: grid;
@@ -96,16 +100,28 @@ h5{
     margin-left: 40px;
 }
 
-.icc{
+/* .icc{
     margin-top: 20px;
     display: grid;
     height: 100px;
-    /* background-color: palevioletred; */
+    /* background-color: palevioletred; 
     grid-template-columns: auto auto auto auto ;
-
+} */
+.lo1{
+    display: flex;
+    gap: 20px;
+}
+.icc ul li{
+    display: inline;
+    list-style: none;
+    color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 .apple{
+    /* display: flex; */
     margin-left: 50px;
     margin-top: 30px;
     color: white;
@@ -113,6 +129,7 @@ h5{
     font-weight: 500;
     /* align-self: flex-start; */
 }
+
 .a1{
     color: white;
     align-self: center;
@@ -139,4 +156,7 @@ h5{
     align-self: center;
     font-size: 20px;
     font-weight: 200;
+}
+.h12{
+    font-size: 50px;
 }

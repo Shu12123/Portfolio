@@ -1,44 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <script src="https://kit.fontawesome.com/a0f4e8788a.js" crossorigin="anonymous"></script> -->
-     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .come{
-            background-color: #181818;
-            height: 30px;
-        }
-        ul{
-            display: flex;
-        }
-        .comes{
-            color: white;
-            justify-content: center;
-            gap: 50px;
-            list-style: none;
-        }
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .come {
+        background-color: #181818;
+        height: 30px;
+      }
+      ul {
+        display: flex;
+      }
+      .comes {
+        color: white;
+        justify-content: center;
+        gap: 50px;
+        list-style: none;
+      }
+      /* .bg-shape {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background: linear-gradient(135deg, #1e3cfa, #a64bf4);
 
-     </style>
-</head>
-<body>
+        border-radius: 60% 40% 65% 35% / 40% 60% 40% 60%;
+
+        right: -150px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        z-index: 1;
+      } */
+      body {
+        background-image: url("https://images4.alphacoders.com/286/thumb-1920-286946.jpg");
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .box {
+        flex: 1;
+        padding: 20px;
+        background-color: lightblue;
+        background-color: white;
+        text-align: center;
+      }
+      .contact-container {
+        flex: 1;
+        padding: 30px;
+        width: 50%;
+        /* width: 400px; */
+        border-radius: 10px;
+
+        /* background-color: lightblue; */
+        /* text-align: center; */
+        background-color: white;
+        /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .btn:hover {
+        background: #0056b3;
+      }
+      .info-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+
+        gap: 20px;
+        background: #111;
+        padding: 40px;
+        color: white;
+        border-radius: 10px;
+      }
+
+      .info-box {
+        text-align: center;
+      }
+
+      .icon {
+        font-size: 30px;
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
     <!-- <i class="fa-brands fa-facebook-f"></i>
     <i class="fa-brands fa-square-facebook"></i>
     <i class="fa-brands fa-facebook" style="color: rgb(110, 101, 140);"></i>
     <a href="http://github.com/Shu12123">
     <i class="fa-brands fa-github" style="color: rgba(177, 151, 252, 1);"></i> </a>-->
     <div class="come">
-        <ul class="comes">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
+      <ul class="comes">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
     </div>
+    <div class="container">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
 
-</body>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+
+          <div class="form-group">
+            <input type="text" placeholder="Subject" required />
+          </div>
+
+          <div class="form-group">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Now</button>
+        </form>
+      </div>
+      <div class="info-container">
+        <div class="info-box">
+          <i class="icon">📞</i>
+          <h4>Phone Number</h4>
+          <p>+6282 4032 567</p>
+        </div>
+
+        <div class="info-box">
+          <i class="icon">✉️</i>
+          <h4>Email Address</h4>
+          <p>example@email.com</p>
+        </div>
+
+        <div class="info-box">
+          <i class="icon">💬</i>
+          <h4>WhatsApp</h4>
+          <p>082-245-7253</p>
+        </div>
+
+        <div class="info-box">
+          <i class="icon">📍</i>
+          <h4>Our Office</h4>
+          <p>2443 Oak Ridge Omaha</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
